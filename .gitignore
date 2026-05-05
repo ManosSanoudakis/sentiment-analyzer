@@ -1,0 +1,44 @@
+# ── Virtual Environment ───────────────────────────────────────────────────────
+venv/
+env/
+.env/
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+# The IMDb CSV is 66 MB — too large for GitHub (limit is 100 MB, recommended < 50 MB)
+data/
+
+# ── Saved Models ──────────────────────────────────────────────────────────────
+# Model weights are large binary files, not suited for Git
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.pkl
+*.h5
+*.keras
+
+# ── Jupyter Notebook Checkpoints ──────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Python Cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Hugging Face Cache ────────────────────────────────────────────────────────
+# Downloaded model weights (~250 MB) stored here by transformers library
+.cache/
+~/.cache/huggingface/
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── VS Code ───────────────────────────────────────────────────────────────────
+.vscode/
+
+# ── Plots ─────────────────────────────────────────────────────────────────────
+# Ignore PNGs anywhere EXCEPT reports/figures/ (those are pushed to GitHub)
+*.png
+!reports/figures/*.png
