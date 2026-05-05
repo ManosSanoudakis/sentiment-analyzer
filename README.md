@@ -405,35 +405,10 @@ This is one of the most important lessons of this project:
 
 ---
 
-## 📚 Key Concepts Glossary
-
-| Term | Simple Explanation |
-|------|-------------------|
-| **TF-IDF** | Converts words into numbers. Words important to a specific review but rare across all reviews get a higher score. |
-| **ReLU** | An activation function that turns negative numbers into zero and leaves positive numbers unchanged. Helps networks learn non-linear patterns. |
-| **Dropout** | Randomly switches off a fraction of neurons during training. Forces the network not to rely on any single path — reduces overfitting. |
-| **Sigmoid** | Squashes any number into [0, 1], giving a probability. Used in the final layer of every model here. |
-| **BCELoss** | Binary Cross-Entropy Loss — measures how wrong the model's probability predictions are vs. the true labels. |
-| **AdamW** | An optimiser that adjusts model weights after every batch, adapting the learning rate per weight individually. |
-| **Early Stopping** | Monitors validation loss. If it has not improved for N consecutive epochs, training stops and best weights are restored. |
-| **ReduceLROnPlateau** | If validation loss has not dropped for N epochs, the learning rate is halved. |
-| **Embedding layer** | A lookup table mapping word IDs to dense vectors. The model learns what each word "means" during training. |
-| **Hidden state** | The LSTM's memory — a vector that accumulates context from all previously seen words. |
-| **Bidirectional LSTM** | Reads text both left→right and right→left, then combines both views for richer context. |
-| **Fine-tuning** | Taking a pre-trained model and doing a small amount of additional training on a new specific task. |
-| **`[CLS]` token** | A special DistilBERT token whose final output vector summarizes the entire input sentence. |
-| **Attention mask** | Tells DistilBERT which positions are real tokens (1) vs. padding (0). |
-| **AUC** | Area Under the ROC Curve. Measures class separation across all thresholds. 1.0 = perfect, 0.5 = random guessing. |
-| **Confusion Matrix** | A 2×2 table: diagonal = correct predictions, off-diagonal = mistakes. |
-
----
-
 ## 👤 Author
 
 **Manos Sanoudakis**
 Statistics & Insurance Science Graduate · University of Piraeus
 Transitioning into ML/AI Engineering
 
----
 
-*Built while learning — one stage at a time.*
