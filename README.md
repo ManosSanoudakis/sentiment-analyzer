@@ -43,6 +43,7 @@ pip install -r requirements.txt
 
 ## Structure
 
+```
 sentiment-analyzer/
 ├── data/
 │   └── IMDB Dataset.csv
@@ -50,3 +51,4 @@ sentiment-analyzer/
 ├── stage2_feedforward_nn.ipynb
 ├── stage3_lstm.ipynb
 └── stage4_distilbert.ipynb
+```
