@@ -11,7 +11,7 @@ Binary sentiment classification on 50,000 IMDb movie reviews, built as a learnin
 | 1 | Logistic Regression + TF-IDF | **89.51%** | 89.5% | ~0.96 |
 | 2 | Feedforward Neural Network | 89.34% | 89.4% | 0.9607 |
 | 3 | Bidirectional LSTM | 88.81% | 89.1% | 0.9554 |
-| 4 | DistilBERT (fine-tuned) | 86.77% | 87.7% | 0.9518 |
+| 4 | DistilBERT (fine-tuned) | 87.62% | 87.9% | 0.9503 |
 
 The simplest model won. All three deep learning models overfit — the FNN and LSTM on bag-of-words inputs that discard word order, DistilBERT on hardware constraints (GTX 1060, batch size 16, max length 128). With a larger GPU, DistilBERT would be expected to clear 92%.
 
