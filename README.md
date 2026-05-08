@@ -1,6 +1,8 @@
 # IMDb Sentiment Analyzer
 
-Binary sentiment classification on 50,000 IMDb movie reviews, built as a learning portfolio. Four models, same dataset, increasing complexity — the goal was to understand what actually drives performance, not just chase accuracy.
+I wanted to know what actually matters in NLP — so I ran the same dataset through four models, from logistic regression to DistilBERT, and paid attention. Same 50k reviews, increasing complexity, one question: does harder always mean better?
+
+Spoiler: it doesn't.
 
 ---
 
@@ -13,7 +15,7 @@ Binary sentiment classification on 50,000 IMDb movie reviews, built as a learnin
 | 3 | Bidirectional LSTM | 88.81% | 89.1% | 0.9554 |
 | 4 | DistilBERT (fine-tuned) | 87.62% | 87.9% | 0.9503 |
 
-The simplest model won. All three deep learning models overfit — the FNN and LSTM on bag-of-words inputs that discard word order, DistilBERT on hardware constraints (GTX 1060, batch size 16, max length 128). With a larger GPU, DistilBERT would be expected to clear 92%.
+The simplest model won. All three deep learning models overfit — the FNN and LSTM on bag-of-words inputs that throw away word order anyway, and DistilBERT on the hardware I had (GTX 1060, batch size 16, max length 128). That last one stings a bit. Given a proper GPU, DistilBERT should comfortably hit 92%+. But that's the point — model choice without hardware to match isn't really a fair fight.
 
 ---
 
