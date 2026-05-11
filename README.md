@@ -2,8 +2,6 @@
 
 I wanted to know what actually matters in NLP, so I ran the same dataset through four models, from logistic regression to DistilBERT, and paid attention. Same 50k reviews, increasing complexity, one question: does harder always mean better?
 
-Spoiler: it doesn't.
-
 ## Results
 
 | Stage | Model | Accuracy | F1 | AUC |
